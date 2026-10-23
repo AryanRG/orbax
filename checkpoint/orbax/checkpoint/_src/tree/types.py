@@ -33,5 +33,5 @@ PyTreeKey = Union[
 ]
 PyTreePath = tuple[PyTreeKey, ...]
 
-JsonType = list['JsonValue'] | dict[str, 'JsonValue']
-JsonValue = str | int | float | bool | None | JsonType
+JsonValue = str | int | float | bool | None | list[Any] | dict[str, Any]
+JsonType = list[JsonValue] | dict[str, JsonValue]
